@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: violet;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    justify-content: space-between;
+  }
+  .chart-container{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    gap: 200px;
+    padding: 100px;
+    margin-left:20px;
+  }
+  
+  input, button {
+    margin-bottom: 10px;
+  }
+  
+  #chartType {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #chartType div {
+    margin-right: 1px;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  
+  #chartType div.selected {
+    background-color: #007BFF;
+    color:white;
+  }
+  
+  .bar-chart{
+    width: 80px;
+    height: 200px;
+    border: 1px solid #040202;
+    position: relative;
+  }
+  .pie-chart{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #040202;
+    position: relative;
+  }
+  
+  .input-bar, .max-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color:white;
+    text-align: center;
+    line-height: 30px;
+    height: 0;
+    transition: height 0.5s;
+  }
+  
+  .pie-chart {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .input-slice, .max-slice {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 100px, 100px, 50px);
+    border-radius: 50%;
+    transform-origin: center center;
+    transition: transform 0.5s;
+  }
+  
+  #error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }

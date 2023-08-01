@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Charts</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <span>Input Value</span><br/>
+    <input type="number" id="inputValue" placeholder="Input Value">
+    <span>Max Value</span>
+    <input type="number" id="maxValue" placeholder="Max Value">
+  <div class="container">
+    <div id="chartType">
+      <div value="1">Bar Chart (Level 1)</div>
+      <div value="2">Pie Chart (Level 2)</div>
+      <div value="3">Bar Chart (Level 3)</div>
+    </div>
+    <button onclick="plotChart()">Plot Chart</button>
+    <div id="error" class="hidden">Input value should not be greater than Max value!</div>
+    <div id="chartContainer" class="chart-container"></div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
